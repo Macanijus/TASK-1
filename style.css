@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap");
+
+/* ---- the whole section ---- */
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 64px 0px 0px;
+  position: relative;
+  width: 1440px;
+  height: 576px;
+  background: #e3cfcf;
+}
+
+/* ---- end of section ----*/
+
+/* ---- image container ----*/
+.img-container {
+  width: 720px;
+  height: 576px;
+  /* Primary/Black */
+  background: #000000;
+  border-radius: 1px;
+}
+
+.background {
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+/* ---- end of image container ----*/
+
+/* ---- content container ----*/
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 720px;
+  height: 576px;
+}
+
+.title-paragraph-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  margin-bottom: 140px;
+  width: 512px;
+  height: 337px;
+}
+
+.title-paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 512px;
+  height: 261px;
+}
+
+#heading {
+  width: 512px;
+  height: 84px;
+  /* 1440/Header/H3 */
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 275;
+  font-size: 32px;
+  line-height: 130%;
+  /* or 42px */
+  text-align: center;
+  text-transform: uppercase;
+  /* Primary/Black */
+  color: #000000;
+}
+
+#paragraph {
+  width: 512px;
+  height: 161px;
+  /* 1440/Primary/P4 */
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  text-align: center;
+  /* Primary/Black */
+  color: #000000;
+}
+
+#additionalText {
+  width: 512px;
+  height: 161px;
+  /* 1440/Primary/P4 */
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  margin-top: 70px;
+  text-align: center;
+  /* Primary/Black */
+  color: #000000;
+}
+
+#toggleButton {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 2px;
+  margin-top: 75px;
+  width: 170px;
+  height: 52px;
+  border: 1px solid #000000;
+  background-color: transparent;
+  cursor: default;
+  transition: transform 0.2s ease-in-out, cursor 0.2s ease-in-out;
+}
+
+#toggleButton:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#button-text {
+  /* 1440/Button/B2 */
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  /* or 18px */
+  text-align: center;
+  /* Primary/Black */
+  color: #000000;
+}
+
+/* ---- end of content container ----*/
+
+/* ---- responsive design for phone (375) ---- */
+
+@media (max-width: 375px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 16px;
+    position: relative;
+    width: 375px;
+    height: auto;
+    background: #e3cfcf;
+  }
+
+  .img-container {
+    width: 100%;
+    height: 300px;
+    background: #000000;
+    border-radius: 1px;
+  }
+
+  .background {
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+  }
+
+  .title-paragraph-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 32px;
+  }
+
+  .title-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+  }
+
+  #heading {
+    width: 343px;
+    height: 62px;
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 275;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+    text-align: center;
+    text-transform: uppercase;
+    /* Primary/Black */
+    color: #000000;
+  }
+
+  #paragraph {
+    width: 343px;
+    height: 189px;
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    /* or 21px */
+    text-align: center;
+    /* Primary/Black */
+    color: #000000;
+  }
+
+  #additionalText {
+    width: 343px;
+    height: 189px;
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    /* or 21px */
+    margin-top: 24px;
+    text-align: center;
+    /* Primary/Black */
+    color: #000000;
+  }
+
+  #toggleButton {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 2px;
+    margin-top: 3px;
+    width: 112px;
+    height: 48px;
+    border: 1px solid #000000;
+    background-color: transparent;
+  }
+  #button-text {
+    /* 1440/Button/B2 */
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    /* or 18px */
+    text-align: center;
+    /* Primary/Black */
+    color: #000000;
+  }
+}
+
+/* ---- end of responsive design for phone (375) ---- */
